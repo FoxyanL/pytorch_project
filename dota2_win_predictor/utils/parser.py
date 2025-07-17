@@ -64,4 +64,4 @@ if __name__ == "__main__":
             print(f"Добавлено {added} новых матчей.")
         else:
             print("Получены пустые данные.")
-        time.sleep(15)
+        time.sleep(120)

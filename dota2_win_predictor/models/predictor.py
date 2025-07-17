@@ -3,10 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class Dota2MLP(nn.Module):
-    def __init__(self, hero_count: int = 123, hidden_dims: list[int] = [256, 128, 64]):
+    def __init__(self, hero_count: int = 126, hidden_dims: list[int] = [256, 128, 64]):
         super(Dota2MLP, self).__init__()
 
-        input_dim = hero_count * 2  # 123 героев Radiant + 123 героев Dire
+        input_dim = hero_count * 2  # 126 героев Radiant + 126 героев Dire
 
         layers = []
         dims = [input_dim] + hidden_dims
